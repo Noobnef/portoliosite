@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quốc Đạt • Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body data-page="blog-list">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">Quốc Đạt</a>
+      <button class="nav-toggle" aria-label="Mở menu">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li><a class="nav-link" href="editor.html">Viết bài</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container blog-layout">
+    <section class="posts card" style="grid-column:1 / -1">
+      <div class="posts-header">
+        <h3>Bài viết</h3>
+        <input id="searchInput" class="search" type="search" placeholder="Tìm theo tiêu đề..." />
+      </div>
+      <div id="postsList" class="posts-list"></div>
+      <template id="postItemTpl">
+  <article class="post-item">
+    <img class="post-thumb" alt="" />
+    <div class="post-content">
+      <a class="post-title"></a>
+      <p class="post-excerpt"></p>
+      <div class="meta-row">
+        <span class="post-date"></span>
+        <div class="gap"></div>
+        <a class="btn small outline" data-view>Đọc</a>
+        <a class="btn small" data-edit>Sửa</a>
+        <button class="btn small danger" type="button" data-delete>Xoá</button>
+      </div>
+    </div>
+  </article>
+</template>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Quốc Đạt</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio của Quốc Đạt - Frontend/Backend Developer chuyên về JavaScript, .NET và xây dựng sản phẩm web hiện đại" />
+  <title>Quốc Đạt • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">Qc Dt</a>
+      <button class="nav-toggle" aria-label="Mở menu">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link active" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Xin chào, mình là <span class="accent">Quốc Đạt</span></h1>
+        <p class="subtitle">Frontend/Backend Developer • Yêu thích JS, .NET. Thích làm sản phẩm gọn gàng, nhanh và hữu dụng.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Xem Projects</a>
+          <a class="btn" href="blog.html">Đọc Blog</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <figure class="avatar">
+          <img src="Pictures/z2601431725646_dc43bfe575bd95687ffbcc1167c9d3c7.jpg" 
+               alt="Ảnh đại diện Quốc Đạt" 
+               loading="lazy" />
+        </figure>
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h2>Về mình</h2>
+      <p>
+        Mình yêu thích xây dựng các website và ứng dụng hướng sản phẩm. Một số dự án tiêu biểu gồm 
+        <strong>CineTicket</strong> – hệ thống đặt vé xem phim online, <strong>Serverless Auto-Resource</strong> 
+        – nghiên cứu tự động cung cấp tài nguyên theo nhu cầu, và <strong>App Quản lý nhân sự</strong>. 
+        Mình luôn hứng thú với cách công nghệ giúp tối ưu trải nghiệm người dùng và tự động hoá quy trình vận hành.
+      </p>
+      
+      <ul class="chips">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>.NET</li>
+        <li>SQL Server</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Dự án nổi bật</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>🎬 CineTicket</h3>
+          <p>Hệ thống đặt vé xem phim trực tuyến với giao diện hiện đại, tích hợp thanh toán và quản lý rạp chiếu.</p>
+          <div class="card-actions">
+            <a class="btn small primary" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn small outline" href="#" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+        
+        <article class="card">
+          <h3>☁️ Serverless Auto-Resource</h3>
+          <p>Nghiên cứu và triển khai hệ thống tự động cấp phát tài nguyên cloud dựa trên nhu cầu thực tế.</p>
+          <div class="card-actions">
+            <a class="btn small primary" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn small outline" href="#" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+        
+        <article class="card">
+          <h3>👥 HR Management App</h3>
+          <p>Ứng dụng quản lý nhân sự toàn diện với tính năng chấm công, tính lương và báo cáo thống kê.</p>
+          <div class="card-actions">
+            <a class="btn small primary" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn small outline" href="#" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <h2>Liên hệ</h2>
+      <p>
+        📧 Email: <a href="mailto:lqcdt@gmail.com" target="_blank">lqcdt@gmail.com</a><br/>
+        💻 Github: <a href="https://github.com/Noobnef" target="_blank" rel="noopener">@Noobnef</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Lâm Quốc Đạt •
+    </div>
+  </footer>
+</body>
+</html>

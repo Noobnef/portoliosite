@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quốc Đạt • Viết bài</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body data-page="blog-editor">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">Quốc Đạt</a>
+      <button class="nav-toggle" aria-label="Mở menu">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="blog.html">Blog</a></li>
+        <li><a class="nav-link active" href="editor.html">Viết bài</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="padding:40px 0">
+    <section class="editor card">
+      <h2>Viết bài mới</h2>
+      <form id="postForm">
+        <label>Tiêu đề
+          <input id="postTitle" type="text" placeholder="Nhập tiêu đề..." required />
+        </label>
+        <label>Nội dung (hỗ trợ xuống dòng)
+          <textarea id="postContent" rows="10" placeholder="Viết nội dung ở đây..." required></textarea>
+        </label>
+
+        <label>Ảnh bìa (tuỳ chọn)
+  <input id="postImage" type="file" accept="image/*">
+</label>
+<div class="image-dropzone" id="imageDrop">
+  <div class="image-preview" id="imagePreview">Chưa có ảnh</div>
+  <div class="image-actions">
+    <button class="btn small" type="button" id="clearImage">Xoá ảnh</button>
+  </div>
+  <p class="hint">Kéo & thả ảnh vào khung này hoặc bấm chọn file. Ảnh sẽ được nén/resize trước khi lưu.</p>
+</div>
+
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Lưu bài</button>
+          <a class="btn outline" href="blog.html">Về danh sách</a>
+        </div>
+        <input type="hidden" id="postId" />
+      </form>
+      <p class="hint">Bài viết được lưu bằng <code>localStorage</code>.  
+        Nếu bạn vào từ <code>editor.html?slug=...</code> sẽ tự động nạp bài để sửa.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Quốc Đạt</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quốc Đạt • Bài viết</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body data-page="blog-post">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">Quốc Đạt</a>
+      <button class="nav-toggle" aria-label="Mở menu">☰</button>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="blog.html">Blog</a></li>
+        <li><a class="nav-link" href="editor.html">Viết bài</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="padding:40px 0">
+    <article class="card">
+      <h1 id="postTitle" style="margin-top:0"></h1>
+      <p class="post-date" id="postDate"></p>
+
+      <figure id="postCover" class="post-cover" aria-hidden="true"></figure>
+
+      <div id="postBody" class="reader-body" style="margin-top:16px"></div>
+      <div class="card-actions" style="margin-top:24px">
+        <a id="editLink" class="btn" href="#">Sửa bài này</a>
+        <a class="btn outline" href="blog.html">Về danh sách</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Quốc Đạt</div>
+  </footer>
+</body>
+</html>
