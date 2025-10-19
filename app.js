@@ -549,3 +549,4 @@ function initBlogOnePage(){
     if (p) openReader(p);
   }
 }
+
